@@ -1,0 +1,22 @@
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr class="table-light">
+              <th scope="col">City</th>
+              <th scope="col">State</th>
+              <th scope="col">Votes</th>
+              <th>Confirm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-light" *ngFor="let vote of votesPerCity">
+              <td>{{vote.city}}</td>
+              <td>{{vote.state}}</td>
+              <td>{{vote.votes}}</td>
+              <td class="confSection">
+                <input type="text" name="discCode" data-test-id="discount" id="discCode" placeholder="Discount Code" #discCode>
+                <button class="confButton" data-test-id="confbutton" (click)="confirmLocation(vote.artistName, vote.state, vote.city, discCode)">Confirm</button></td>
+            </tr>
+          </tbody>
+    </table>
+</div>

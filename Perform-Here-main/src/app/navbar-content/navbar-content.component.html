@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-sm fixed-top navbar-dark">
+  <div class="container">
+  <a class="navbar-brand mb-0 h1" [routerLink]="'/'"><img class="peopleImage" alt="app" src="/assets/landing-image.svg"/> PerformHere </a>
+  <button 
+  class="navbar-toggler"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#navbarNav">
+  <span class="navbar-toggler-icon"></span>
+</button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a (click)="browsing()" class="nav-link" data-test-id="browsing">Browsing</a>
+        </li>
+
+        <li class="nav-item active">
+          <a (click)="profile()" class="nav-link" data-test-id="profile">Profile</a>
+        </li>
+
+        <li class="nav-item active">
+          <a (click)="onLogout()" class="nav-link" data-test-id="logout">Log Out</a>
+        </li>
+      </ul>
+  </div>
+</div>
+</nav>
+
+

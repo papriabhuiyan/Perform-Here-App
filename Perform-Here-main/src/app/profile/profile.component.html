@@ -1,0 +1,56 @@
+<div>
+    <app-navbar-content></app-navbar-content>
+</div>
+<br><br><br><br><br>
+
+    <h3 *ngIf="isArtist">Edit Explore Card</h3>
+    <div *ngIf="isArtist" class="container">
+      <form>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Stage Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="sname" name="stageName" placeholder={{a.stageName}} [(ngModel)]="a.stageName">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">My Bio</label>
+        </div>
+        <div class="col-75">
+          <textarea id="bio" name="myBio" placeholder={{a.description}} [(ngModel)]="a.description" style="height:200px"></textarea>
+        </div>
+      </div>
+      <br>
+
+      <div class="row">
+        <button type="submit" value="Update" (click)="updateArtist()">Update</button>
+      </div>
+
+      </form>
+    </div>
+
+    <br *ngIf="isArtist">
+    <h3 *ngIf="isArtist">Your Votes</h3>
+    <div *ngIf="isArtist" class="container">
+      <app-stats-table [votes]="votes" ></app-stats-table>
+    </div>
+    <br *ngIf="isArtist">
+
+    
+      <h3>Vote History</h3>
+      <div class="voteHistory">
+        <div class="card-container" *ngFor="let i of user">
+          <div class="artist-card-body text-light">
+            <h4>You Voted For:</h4>
+              <p>{{i.artistName }}</p>
+            <h4>Location:</h4>
+              <p>{{ i.city }}, {{ i.state }}</p>
+            <h4>Discount Code:</h4>
+              <p>{{i.discountCode}}</p>
+          </div>
+        </div>
+      </div>

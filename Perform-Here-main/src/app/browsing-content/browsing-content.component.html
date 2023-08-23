@@ -1,0 +1,41 @@
+<div class="page">
+    <app-navbar-content></app-navbar-content>
+  <div class="search">
+    <h1 class="title text-light" data-test-id="header">Choose an artist</h1>
+    <div class="searchbar">
+        <input
+          data-test-id="searchbartest"
+          type="search"
+          class="form-control rounded"
+          placeholder="Search here"
+          [(ngModel)]="searchText"
+          (ngModelChange)="updateArtists()"
+          aria-label="Search for artists"
+        />
+    </div>
+    <form class="stateCity">
+        <select name="state" (change)="onSelect($event)" [(ngModel)]="pickedState">
+            <option>Select State</option>
+            <option *ngFor="let state of states" value="{{state.id}}">{{state.name}}</option>
+        </select>
+        <select name="city" class="selectCity" [(ngModel)]="pickedCity">
+            <option>Select City</option>
+            <option *ngFor="let city of cities">{{city.name}}</option>
+        </select>
+     </form>
+    <div class="search-results">
+        <div class="card-container" *ngFor="let artist of newArtists">
+            <div class="artist-card-body text-light">
+                <div class="concert-img">
+                    <img class="concertImage" alt="app" src="/assets/concert2.webp" />
+                </div>
+                <h3>{{ artist.stageName }}</h3>
+                <p>{{ artist.description }}</p>
+                <div class="voteButton">
+                    <button type="button" class="votebtn text-light" (click)="checkout(artist.stageName)" data-bs-toggle="modal" data-bs-target="#myModal">Vote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

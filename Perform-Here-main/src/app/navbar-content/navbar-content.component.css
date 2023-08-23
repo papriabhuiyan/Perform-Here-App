@@ -1,0 +1,21 @@
+.navbar{
+    background-color: #7C00F8;
+}
+.peopleImage{
+    width: 50px;
+    height: 90%;
+}
+
+#dropdownProfileButton{
+    background-color:#7C00F8;
+    border: none;
+}
+
+#dropdownElements{
+    background: linear-gradient(90deg, rgba(255,138,0,1) 0%, rgba(241,231,250,1) 0%);
+    border: none;
+}
+
+a:hover {
+    cursor: pointer;
+}

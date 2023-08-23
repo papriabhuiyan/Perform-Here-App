@@ -1,0 +1,80 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "lato", sans-serif;
+}
+
+.page {
+    background-color: #161616;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+label {
+    color: grey;
+}
+
+.card {
+    padding: 1rem 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+::placeholder {
+    color: transparent;
+}
+
+.btn {
+    display: block;
+    border: none;
+    background-color: #7C00F8;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.btn:hover {
+    background-color: #7C00F8;
+}
+
+.login {
+    color: white;
+}
+
+.login a{
+    color: orange;
+    text-decoration: none;
+}
+
+.login a:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+input.text{
+    box-shadow: 5px 3px 5px rgba(92, 99, 105, .2);
+}
+
+.validator {
+    color: red;
+    font-style: italic;
+    font-size: x-small;
+}
+
+.confirm-label p {
+    color: #7C00F8;
+}

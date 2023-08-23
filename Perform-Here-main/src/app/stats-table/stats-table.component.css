@@ -1,0 +1,18 @@
+.table {
+    table-layout: fixed;
+}
+
+.confSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.confButton {
+    background-color: #7C00F8;
+    color: white;
+    margin: 1px;
+    padding: 2px;
+    border: none;
+    cursor: pointer;
+    font-family: "lato", sans-serif;
+}

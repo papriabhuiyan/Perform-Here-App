@@ -1,0 +1,270 @@
+.landing {
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.top {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: 450px;
+    width: 450px;
+    margin-top: 80px;
+    border-radius: 50%;
+    background-image: linear-gradient(165.23deg, rgba(255, 138, 0, 0.7) 15%, rgba(106, 35, 255, 0.3) 85%);;
+}
+
+.peopleImage {
+    height: 450px;
+    width: 450px;
+}
+
+.bottom {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20vh;
+}
+
+/* Animation */
+.title-wrapper {
+    font-size: 45px;
+    display: inline-flex;
+}
+
+.descrip{
+    font-size: 20px;
+}
+
+.artist-fan-content{
+    color: #FF6565;
+    background-color: black;
+    border: none;
+}
+.red {
+    color: #FF6565;
+}
+
+.dynamic {
+    margin-left: 12px;
+}
+
+.dynamic span {
+    font-size: 45px;
+    position: relative;
+}
+
+.dynamic span::after {
+    content: "";
+    position: absolute;
+    background: black;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-left: 3px solid #FF6565;
+    animation: typing 3.0s steps(8) infinite;
+}
+/* Animation */
+
+.logInButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 100px;
+    height: 42px;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -20px 0 15px;
+    }
+}
+
+.signUpButton {
+    background-color: #7C00F8;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 100px;
+    height: 42px;
+}
+.fans{
+    font-size: 35px;
+}
+.mission{
+    background: #161616;
+    color: white;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    padding: 10rem 0%;
+}
+
+.info{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.for-fans{
+    text-shadow: 2px 2px 8px white;
+    margin-left: 60px;
+    margin-bottom: -10px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.for-artists{
+    text-shadow: 2px 2px 8px white;
+    margin-left: 60px;
+    margin-bottom: -10px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.purpose{
+    margin-bottom: 40px;
+}
+
+
+.image-2{
+    position: relative;
+    width: 270px;
+    margin: 10px;
+}
+
+.voice-image {
+    display: block;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.voice-image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.5rem;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.voice-image-overlay--blur{
+    backdrop-filter: blur(5px);
+}
+
+.voice-image-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.voice-image-overlay:hover{
+    opacity: 1;
+}
+
+.voice-image-overlay:hover > * {
+    transform: translateY(0);
+}
+
+.voice-image-title{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.voice-image-description{
+    font-size: 1em;
+    margin: 6px;
+    text-align: center;
+}
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.arrows path {
+	stroke: #FF6565;
+	fill: transparent;
+	stroke-width: 3px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; 
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s;
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+.demand-card{
+    margin: 30px;
+    text-align: center;
+    background-color: #161616;
+    padding: 25px 50px 50px 50px;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-size: 25px;
+    font-weight: bold;
+    align-items:center;
+    color: #FF6565;
+}
+
+.demandimage{
+    margin: -15px;
+    width: 300px;
+    margin-bottom: 2px;
+    border-radius: 5%;
+}
+

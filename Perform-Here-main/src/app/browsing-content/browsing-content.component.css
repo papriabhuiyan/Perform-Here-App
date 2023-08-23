@@ -1,0 +1,100 @@
+.page {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+}
+.title{
+    text-shadow: 2px 2px 8px white;
+    font-size: 24px;
+}
+
+.searchbar {
+    width: 50vw;
+    margin-bottom: 10px;
+}
+
+.search-results {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.artist-card-body {
+    text-align: center;
+    background-color: #333333;
+    padding: 25px 50px 50px 50px;
+    border-radius: 0.5rem;
+  }
+
+  .card-container {
+    margin: 0.5%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.concertImage {
+  width: 200px;
+  height: 125px;
+  border-radius: 0.75rem;
+}
+
+.votebtn {
+    background-color: #7c00f8;
+    border: none;
+    width: 120px;
+    height: 40px;
+    border-radius: 0.35rem;
+    margin: 20px;
+
+  }
+
+.artist-card-body{
+    text-align: center;
+}
+
+.search-results{
+    margin-top: 30px;
+    display: flex;
+}
+
+.concertImage{
+    width: 200px;
+    height: 125px;
+    border-radius: 0.75rem;
+}
+
+.voteButton{
+    color: #333333;
+}
+
+.title{
+    text-shadow: 2px 2px 8px #333333;
+}
+
+select {
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+  }
+
+  .stateCity {
+    display: flex;
+  }
